@@ -2,6 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
     <meta charset="utf-8">
@@ -9,25 +10,38 @@
   </head>
   <body>
     <div class="container">
-      <form id="journel-form">
-        <div class="form-group">
-          <label for="title">Title:</label>
-          <input type="text" id="title" class="form-control">
-        </div>
-        <div class="form-group">
-          <label for="body">Journel Entry:</label>
-          <textarea rows="10" id="body" class="form-control" ></textarea>
-        </div>
-        <button type="submit" name="button" class="btn">Submit</button>
-      </form>
+      <div class="page-header">
+        <h1>My Journel <small>this journel belongs to Elrey</small></h1>
+      </div>
+      <div class="well">
+        <form id="journel-form">
+          <div class="form-group">
+            <label for="title">Title:</label>
+            <input type="text" id="title" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="body">Journel Entry:</label>
+            <textarea rows="10" id="body" class="form-control" ></textarea>
+          </div>
+          <button type="submit" name="button" class="btn">Submit</button>
+        </form>
+      </div>
 
-      <div id="entry">
+      <div id="entry" class="hide">
         <div class="panel panel-primary">
           <div class="panel-heading">
-            <p>Number of Words: <span class="word_count"></span></p>
-            <p>Number of Vowels: <span class="vowel_count"></span></p>
-            <p>Number of Consonants: <span class="consonant_count"></span></p>
-            <p>Teaser: <span class="teaser"></span></p>
+            <div class="row">
+              <div class="col-md-4">
+                <p>Number of Words: <span class="word_count name-color"></span></p>
+              </div>
+              <div class="col-md-4">
+                <p>Number of Vowels: <span class="vowel_count name-color"></span></p>
+              </div>
+              <div class="col-md-4">
+                <p>Number of Consonants: <span class="consonant_count name-color"></span></p>
+              </div>
+            </div>
+            <p>Teaser: <span class="teaser name-color"></span></p>
           </div>
           <div class="panel-body">
             <h4 class="title"></h4>
