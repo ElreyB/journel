@@ -1,3 +1,5 @@
+var Entry = require('./../js/journel.js').entryModule;
+
 $(document).ready(function(){
   $('#journel-form').submit(function(e){
     e.preventDefault();

@@ -38,3 +38,6 @@ Entry.prototype.consonantCount = function(){
   }
   return totalSum;
 };
+
+
+exports.entryModule = Entry;
