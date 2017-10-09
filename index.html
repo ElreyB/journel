@@ -16,12 +16,24 @@
         </div>
         <div class="form-group">
           <label for="body">Journel Entry:</label>
-          <textarea rows="10" id="body" class="form-control"></textarea>
+          <textarea rows="10" id="body" class="form-control" ></textarea>
         </div>
+        <button type="submit" name="button" class="btn">Submit</button>
       </form>
 
       <div id="entry">
-
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <p>Number of Words: <span class="word_count"></span></p>
+            <p>Number of Vowels: <span class="vowel_count"></span></p>
+            <p>Number of Consonants: <span class="consonant_count"></span></p>
+            <p>Teaser: <span class="teaser"></span></p>
+          </div>
+          <div class="panel-body">
+            <h4 class="title"></h4>
+            <p class="entry"></p>
+          </div>
+        </div>
       </div>
     </div>
   </body>

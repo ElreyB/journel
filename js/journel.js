@@ -8,6 +8,15 @@ Entry.prototype.wordCount = function () {
   return count;
 };
 
+Entry.prototype.getTeaser = function () {
+  var teaser = [];
+  var words = this.entry.split(" ");
+  for (var i = 0; i < 8; i++){
+    teaser.push(words[i]);
+  }
+  return teaser.join(" ") + "......";
+};
+
 Entry.prototype.vowelCount = function () {
   var letters = this.entry.split("");
   var totalSum = 0;
